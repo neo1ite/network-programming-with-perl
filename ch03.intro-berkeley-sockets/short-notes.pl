@@ -59,3 +59,19 @@ $socket_addr = sockaddr_in($port, $address);
 =item packed_addr
 =cut
 
+# get protocol # by human-readable name
+$number = getprotobyname($protocol);
+($name, $aliases, $number) = getprotobyname($protocol);
+
+# lookup protocol name by its #
+$name = getprotobynumber($protocol_number);
+($name,$aliases,$number) = getprotobynumber($protocol_number);
+
+# lookup port number by type of service
+$port = getservbyname($service,$protocol);
+($name,$aliases,$port,$protocol) = getservbyname($service,$protocol);
+
+# lookup service name by its port #
+$port = getservbyport($port,$protocol);
+($name,$aliases,$port,$protocol) = getservbyport($port,$protocol);
+
