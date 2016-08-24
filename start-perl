@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+my $file = shift;
+open FH, ">", $file or die "could not create $file: $!";
+print FH <<SCRIPT;
+#!/usr/bin/perl
+use strict;
+use feature 'say';
+SCRIPT
+close FH or die "couldn't close $file: $!";
+
+chmod 0755, $file;
