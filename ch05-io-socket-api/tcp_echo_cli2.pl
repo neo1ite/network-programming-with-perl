@@ -8,6 +8,7 @@ my $host = shift // 'localhost';
 my $port = shift // 'echo';
 
 my $socket = IO::Socket::INET->new("$host:$port") or die $@;
+$_->autoflush(1) for \(*STDIN, *STDOUT), $socket;
 
 while (defined(my $msg_out = STDIN->getline)) {
     print $socket $msg_out;
