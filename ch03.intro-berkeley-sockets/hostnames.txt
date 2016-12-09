@@ -1,5 +1,0 @@
-www.google.com
-www.tacomapubliclibrary.org
-www.spl.org
-www.perl.org
-www.cpan.org

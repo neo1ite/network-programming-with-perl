@@ -1,0 +1,17 @@
+The example scripts contained in this directory have been processed to
+be portable to machines that have the Perl interpreter located in
+different places.
+
+To install the scripts, run the "install.pl" script located in the
+current directory.  The scripts will be extracted and (hopefully)
+correctly localized for your system, then copied into the directory
+designated as the "site scripts directory" when you installed Perl.
+
+To install into an alternative location, pass install.pl the directory
+of the location you wish to place the scripts.  For example:
+
+  % install.pl /usr/local/tmp/stein_book_examples
+
+Have fun!
+
+Lincoln

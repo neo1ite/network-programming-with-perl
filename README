@@ -1,0 +1,33 @@
+SOURCE CODE FOR NETWORK PROGRAMMING WITH PERL
+
+The directories named "ch1", "ch2" and so on contain the source code
+for the example scripts and modules developed in the corresponding
+chapter.  In cases where the same module has been used in multiple
+chapters, I have created a symbolic link from the current directory to
+the earliest chapter directory in which the module is used.
+
+The "lib" directory contains the consolidated example modules
+organized hierarchically by name.  If you wish to install all the
+modules at once, simply enter this directory and follow the directions
+in the README file there.  Please be aware that only the modules
+developed specifically for the "Network Programming with Perl" book
+are present here.  Third party networking modules, such as
+Net::Telnet, must be installed from CPAN, http://www.cpan.org/
+
+Similarly, the "scripts" directory contains all the example scripts in
+a single directory.  They have been preprocessed in order to make them
+portable to your system.  To install them, enter the directory and
+follow the directions in the README file.
+
+I have made every attempt to keep these scripts safe and bug-free, but
+everyone is human.  Be very careful before you install these scripts
+on a production system, or on a system that is open to the world.  In
+particular, don't leave any of the example servers running long-term
+without monitoring what they're doing and who is using them.  Remember
+that these scripts are intended as learning examples and not as
+production software.
+
+Enjoy!
+
+Lincoln Stein
+lstein@cshl.org

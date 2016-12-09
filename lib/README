@@ -1,0 +1,40 @@
+These are various pure-Perl modules developed for the book "Network
+Programming with Perl", by Lincoln Stein.  Many of the example scripts
+from the book are dependent on one or more of these modules.
+
+You can install them in one of two ways:
+
+1) On systems that have the make or nmake utilities installed, make
+the directory that contains this README file current and type:
+
+	% perl Makefile.PL
+	% make
+	% make install
+
+Notice that there is no "make test".
+
+2) On systems that do not have either of these utilities (such as
+unenhanced Windows and Macintosh systems), I have provided a small
+script named "install.pl" that will copy these modules into the
+appropriate location for site-specific libraries on your system.
+
+Make the directory that contains this README file current and type:
+
+	C:> perl install.pl
+
+Macintosh users should run the script from within MacPerl.
+
+You will see messages indicating that the files are being copied to
+their destinations.  If you wish to install the modules into an
+alternative location, you may provide the target directory as an
+argument:
+
+	C:> perl install.pl C:\temporary\perllib
+
+After this, you will have to set the PERL5LIB environment variable
+appropriately so that the example scripts can find these modules.
+
+Have fun!
+
+Lincoln
+
